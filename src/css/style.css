@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins'); /*futura bold, gill sans(textos)*/
+
+* {
+    margin-left:0px;
+    padding:0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;    
+
+    }
+  
+#contenedor{
+    display: inline-block;
+    padding-top: 30%;
+    width: 100%;
+    max-width: 800px;
+    height: 600px;
+    background-color:#E2B200;
+    text-align: center;    
+}
+
+#log-princ{  
+    margin-top: 30vw;     
+    text-align: center;
+    width: 75vw;
+    height: 20vw;
+}
+
+#log-universal{ 
+    margin-top: 30vw;
+   /* padding-top:5%;*/
+    margin-left: 15%;  
+    width: 68vw;      
+    height: 20vw;
+}
+
+#register-section, #login-section{
+    text-align: center;
+}
+
+
+#button-login, #button-signIn{
+   
+   margin-left: 15%; 
+   width:40vw;
+   height: 10vw;
+   position: relative;
+   float: left;   
+}
+
+.btn-ingreso, .btn-registro, .btn-return{
+    padding-top: 5%;
+    margin-left: center; 
+    width:40vw;
+    height: 10vw;
+    position: relative;
+    float: left;   
+ }
+
+
+

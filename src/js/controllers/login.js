@@ -26,9 +26,9 @@
         if (checkPasswords) {
           firebase.auth().createUserWithEmailAndPassword(email, password)
             .then(function() {
-              window.location.hash = '#/home'; /*vista de acceso a la pag principal*/
-             // result = window.redSocial.checkEmail()
-            //  return result
+              
+              window.location.hash = '/login';
+             
             })
             .then(function(response) {
   
@@ -62,14 +62,8 @@
         firebase.auth().signInWithEmailAndPassword(emailSingIn, passwordSingIn)
           .then(function() {
   
-            let userSigIn = window.equality.obtainUser(); /*cambier wiondow*/
-            //if (userSigIn.emailVerified) {
               window.location.hash = '#/home'; /*ingreso al acceso de menu*/
-           // } else {
-            window.equality.signOut(); /*cambier wiondow*/
-            //  alert('Favor de ir a tu correo y validar el email que registraste');
-  
-           // }
+           
           })
           .catch(function(error) {
             //Handle Erros here.

@@ -1,0 +1,19 @@
+{
+  "name": "igualdad-laboral",
+  "version": "1.0.0",
+  "description": "Este es un proyecto enfocado al fomento de la igualdad laboral en entornos empesariales.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GiovannaGlz/hackathon-nenemi-sekkan.git"
+  },
+  "author": "Giovanna, Eli, Nohemí",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GiovannaGlz/hackathon-nenemi-sekkan/issues"
+  },
+  "homepage": "https://github.com/GiovannaGlz/hackathon-nenemi-sekkan#readme"
+}

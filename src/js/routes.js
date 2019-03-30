@@ -1,6 +1,6 @@
 (function(window, document){
     $.getId('view').router()
-      .route('/', 'views/home.html', null, function(){
+      .route('/', 'views/cover_page.html', null, function(){
        showAuthenticationBottons();
       })
       .route('/login', 'views/login.html', 'login', function(){
