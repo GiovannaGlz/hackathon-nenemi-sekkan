@@ -26,4 +26,6 @@ const showPerfil = () => {
   backButton.style.display = 'none';
   //searchButton.style.display = 'block';
   //searchButton.style.display= 'block';
+
 }
+

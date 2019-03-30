@@ -61,7 +61,7 @@
   
         firebase.auth().signInWithEmailAndPassword(emailSingIn, passwordSingIn)
           .then(function() {
-  
+            let userSigIn = window.equality.obtainUser(); 
               window.location.hash = '#/home'; /*ingreso al acceso de menu*/
            
           })
@@ -76,23 +76,26 @@
         firebase.auth().onAuthStateChanged(function(user) {
           if (user) {
             console.log('hay usuario')
-            if(location.href.includes('editprofile')){ /*cambiar window*/
-              const postButton = library.get('add-btn');
+           // if(location.href.includes('home')){ /*cambiar window*/
+             // const postButton = library.get('add-btn');
             //  library.getController().printData();
+            userShort= user.email;
+            userView=userShort.split("@");
+
               var displayName = user.displayName;
               if (displayName == null) {
-                displayName = user.email;
+                displayName = userView[0];
               }
   
-            /*  var photoURL = 'img/profile.jpg';
+             var photoURL = 'img/user.jpg';
               if (user.photoURL != null) {
                 photoURL = user.photoURL;
-              }*/
+              }
   
   
-             // const photoDefault = library.get('cliente-photo');
+              const photoDefault = library.get('cliente-photo');
               const userNameField = library.get('user-name');
-              //photoDefault.setAttribute("src", photoURL);
+              photoDefault.setAttribute("src", photoURL);
               userNameField.value = displayName;
   
               /*postButton.addEventListener('click', () => {
@@ -104,11 +107,10 @@
             }
           } else {
             window.location.hash = '#/';*/
-          }
+         // }
           }
         });
       },
-  
   
      
   
